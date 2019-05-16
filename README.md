@@ -1,29 +1,11 @@
 # grammer-teacher
 
-## Project setup
-```
-npm install
-```
+Project is intended to listen to all your conversations and try to fix mistakes in your language.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
+## Deployment Instructions
 ```
 npm run build
+surge dist
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+set `grammer-teacher.surge.sh` as url
