@@ -1,5 +1,4 @@
 <template>
-  <el-container>
     <el-main>
       <el-row :gutter="20" v-if="error">
         Error Initializing Mic
@@ -49,7 +48,6 @@
         </el-col>
       </el-row>
     </el-main>
-  </el-container>
 </template>
 
 <script>
@@ -60,7 +58,7 @@ let recognition = SpeechRecognition? new SpeechRecognition() : false
 const writeGood = require('write-good');
 
 export default {
-  name: 'Main',
+  name: 'WebSpeechAPI',
   data () {
     return {
       text: '',
@@ -173,4 +171,3 @@ export default {
       }
     }
 </style>
-

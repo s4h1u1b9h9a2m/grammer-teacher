@@ -1,14 +1,20 @@
 <template>
-    <Main/>
+  <el-container class="shub-container">
+    <el-aside width="auto">
+      <NavigationMenu/>
+    </el-aside>
+    <el-container>
+      <router-view></router-view>
+    </el-container>
+  </el-container>
 </template>
 
 <script>
-import Main from './components/Main.vue'
-
+import NavigationMenu from './components/NavigationMenu.vue'
 export default {
   name: 'app',
   components: {
-    Main
+    NavigationMenu
   }
 }
 </script>
@@ -21,5 +27,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.shub-container {
+  height: 100vh;
 }
 </style>
